@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+        <title>CREATE TICKET</title>
+
+        <!-- CSS styles -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- JavaScript -->
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>   		       
+		<h1>CREATE TICKET</h1>	
+		
+		<input type="hidden" id="number" name="number" value="201">
+		
+		<form id="ticketData" action="" method="POST"> 
+			<table class="blueTable">
+				<tr>
+					<td>NAME:</td>
+					<td><input type="text" id="inputName" name="inputName" value="" maxlength="20" size="20"></td>
+				</tr>
+				<tr>
+					<td>TITLE:</td>
+					<td><input type="text" id="inputTitle" name="inputTitle" value="" maxlength="200" size="75" ></td>
+				</tr>
+				<tr>
+					<td>COMPLETED:</td>
+					<td>
+						<select id="inputCompleted" name="inputCompleted" value="" >
+							<option value="true">true</option>
+							<option value="false">false</option>
+						</select>					
+					</td>
+				</tr>
+			</table>
+			<div align="center">
+				<button class="button button1" onclick="saveNewData()">SAVE</button>
+			</div>
+		</form>
+    </body>
+
+</html>

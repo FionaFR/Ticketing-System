@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+        <title>Awesome Tickets</title>
+
+        <!-- CSS styles -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- JavaScript -->
+        <script src="js/index.js"></script>
+    </head>
+
+    <body onload="tableData();">   
+
+		<input type="hidden" id="userName" name="userName" >
+		
+		<div class="topnav">
+        <a class="active" href="#home"><img src="image/AT_Logo.png" width="200" height="100">Awesome Tickets</a>  
+        </div>	        
+				
+		<form id="ticketData" action="" method="GET"> 
+			<p></p>
+			<div align="center">	
+				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for title..">		
+			</div>		
+		</form>
+		<div align="center">
+			<button class="button button1" onclick="openNewTicket()">Add New Ticket</button>
+		</div>
+		
+		<table class="blueTable" id="myTable">
+			<thead>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>TITLE</th>
+				<th>COMPLETED</th>			
+			</thead>
+			<tbody id="data">		
+			</tbody>		
+		</table>     
+        
+    </body>
+
+</html>
